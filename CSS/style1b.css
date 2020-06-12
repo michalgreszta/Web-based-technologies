@@ -1,0 +1,118 @@
+body {
+	max-width: 1080px;
+	margin: 0;
+	background-color: aqua;
+	cursor: default;
+}
+
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	color: red;
+	letter-spacing: 0.1em;
+}
+
+h2 {
+	color: blue;
+}
+
+h3 {
+	color: #FF0000;
+}
+
+p {
+	text-indent: 2em;
+}
+
+table {
+	background-color: pink;
+	border: 10px dotted rgba(43, 255, 0, 0.4);
+}
+
+thead {
+	color: white;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+tbody {
+	font-style: italic;
+	background-color: beige;
+}
+
+table td:nth-child(1) {
+	background-color: green;
+}
+
+table td:nth-child(3) {
+	background-color: red;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ol ol {
+	list-style-type: lower-roman;
+}
+
+ol ol ol {
+	list-style-type: lower-greek;
+}
+
+#main {
+	background-color: grey;
+	margin: 0px 25px 0px 25px;
+	padding: 15px;
+}
+
+.title {
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+}
+
+#Spis_tresci {
+	text-align: center;
+	background-color: blanchedalmond;
+	padding-right: 5px;
+	width: 100%;
+}
+
+#Spis_tresci ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#Spis_tresci ul li {
+	border-style: dashed;
+	background-color: goldenrod;
+	border-color: green;
+}
+
+#Spis_tresci ul li :hover {
+	border-style: solid;
+	background-color: greenyellow;
+}
+
+p::first-letter {
+	color: red;
+	font-size: 1.5em;
+}
+
+a {
+	cursor: default !important;
+}
+
+#Tytul {
+    width: 10%;
+}
+
+#Spis_tresci {
+    width: 20%;
+}
+
+#main {
+    width:70%;
+}

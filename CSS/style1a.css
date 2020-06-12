@@ -1,0 +1,13 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    color:black !important;
+    background:white !important;
+} 
+
+#Spis_tresci {
+    display:none;
+}
+

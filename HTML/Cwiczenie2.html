@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ćwiczenie 2</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;
+charset=UTF-8" />
+</head>
+<body>
+<div>
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer"><img
+		  src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+		</p>
+
+		<div>
+				<p>Spis tresci:</p>
+					<ul>
+						<li><a href="#C1">kursywa i pogrubiony tekst</a></li>
+						<li><a href="#C2">fragmenty kodu(inline) - na dwa sposoby</a></li>
+						<li><a href="#C3">wzór matematyczny</a></li>
+						<li><a href="#C4">ręcznie złamana linijka</a></li>
+						<li><a href="#C5">odpowiedzi na pytania</a></li>
+
+					</ul>
+			
+			</div>
+	
+	<h1>Rozdział I</h1>
+	<p id="C1">Pogrubianie tekstu - <b>sposób pierwszy</b> i <strong>sposób drugi</strong>. Kursywa - <i>sposób pierwszy</i> i <em>sposób drugi</em>.</p>
+	<p id="C2">Sposób 1 - z użyciem 'code':
+	
+		<code>
+			if (thisTxt == 1)
+				return true;
+			else
+				return false;
+		</code>
+	
+	     Sposób 2 - z użyciem 'samp':
+	     <samp>
+		     if (thisTxt == 1)
+		     		return true;
+		     else 	   
+		     		return false;
+	    </samp></p>
+	
+	<p id="C3">Zmyślony wzór matematyczny:
+		
+			log<sub>a</sub>b<sup>2</sup> &le; 2log<sub>a</sub>b &ge; 0
+		
+	</p>
+	<p id="C4">W dalszej części swojej pracy chciałbym ręcznie zła-<br />mać linijkę. Zrobiłem to, pom<br />imo, że t<br /><br />aki tekst jest tr<br />udny do czytania.</p>
+	<p>Praca ta jest studium psychologicznym jednego z najtrudniejszych, najbardziej zawiłych problemów psychologii eksperymentalnej: problemu
+		myślenia i mowy. Nikt, jak się wydaje, nie podjął dotychczas systematycznych badań eksperymentalnych w tej dziedzinie.
+		Rozwiązanie zadania, jakie sobie postawiłem, na podstawie pierwszej chociażby aproksymacji wymagało wykonania szeregu mniejszych prac
+		eksperymentalnych. Nie sposób było poprzestać na badaniach eksperymentalnych, należało sięgnąć również do prac teoretycznych i
+		krytycznych. Trzeba było, po pierwsze, przeprowadzić analizę teoretyczną, a następnie uogólnić już zebrany przez psychologów bogaty
+		materiał faktyczny, skonfrontować i porównać dane filogenezy i ontogenezy, by w ten sposób określić punkty wyjścia dla rozwiązania
+		naszego problemu oraz podstawowe przesłanki dla samodzielnego zdobywania faktów naukowych, przez nadanie im postaci ogólnej teorii
+		genetycznych podstaw myślenia i mowy. Po drugie, trzeba było krytycznie przeanalizować panujące współcześnie teorie myślenia i mowy,
+		by z nich uczynić odskocznię w odnajdywaniu własnych dróg i opracowaniu wstępnych hipotez roboczych, przy czym od samego początku
+		teoretyczną drogę naszego badania trzeba było przeciwstawić tej drodze, która doprowadziła do powstania dominujących dziś w nauce
+		teorii, teorii nie dających się utrzymać, wymagających rewizji<br />i przezwyciężenia.</p>
+
+	<pre>
+		<code>
+		import java.util.Scanner;
+
+		public class Fibo 
+		{
+		    public static int fib(int n)
+		        {
+			        if (n &lt;= 1) return n;
+				else return fib(n-1) + fib(n-2);
+	       	        }
+		    public static void main(String[] args)
+			{
+			        int liczba = userInputScanner.nextInt();
+
+			        if(liczba &lt; 1 || liczba>45)	
+				{
+			            System.out.println("Number out of range!");
+							                return;
+				}	
+				else
+				{
+				    System.out.println("Your number: " + liczba);
+				}
+			}
+
+		}
+		</code>
+	</pre>
+
+	<h3 id="C5">Jaka jest różnica między znacznikami i oraz em? Czy zawsze dają identyczne wyniki?</h3>
+	<p>Znaczniki 'em' oraz 'i' zawsze dają taki sam rezultat. Różnica jest następująca. 
+		Element 'em' według nowych standardów HTML5 ma wyróżniać tekst poprzez podkreślenie oraz zwiększenie nacisku na wyrażenie,
+		które znajdzie się pomiędzy jego znacznikami, podczas gdy znacznik 'i' ma na celu jedynie wyróżnić daną treść spośród pozostałych
+		i czyni to poprzez pochylenie tekstu.</p>
+
+	<h3>Jaka jest różnica między znacznikami b oraz strong? Czy zawsze dają identyczne wyniki?</h3>
+	<p>Różnica pomiędzy znacznikami b oraz strong jest podobna do tej powyżej. Element strong powinniśmy stosować wtedy,
+		gdy tekst ma znaczenie merytoryczne, jest ważny dla całości i trzeba na niego zwrócić szczególną uwagę. 
+		Znacznik b z kolei stosujemy, gdy tekst ma być pogrubiony wizualnie, ale nie jest bardziej znaczący z punktu widzenia merytorycznego.</p>
+
+	<h3>Jaka jest różnica między znacznikami code oraz samp? Czy zawsze dają identyczne wyniki?</h3>
+	<p>Podobnie jak w powyższych. Wizualnie oba znaczniki nie wykazują żadnej różnicy. Ta bowiem istnieje na poziomie 
+		semantycznym. Znacznik 'code' służy do prezentowania fragmentów kodu programu, natomiast 'samp' służy do pokazywania
+		danych wyjściowych z programu lub systemu liczącego.</p>
+
+	<h3>Jaka jest różnica pomiędzy fragmentem strony sformatowanej tak: &lt;p&gt;…&lt;/p&gt;&lt;p&gt;…&lt;/p&gt; oraz fragmentem o następującej postaci: &lt;p&gt;…&lt;br/&gt;&lt;br/&gt;…&lt;/p&gt;?</h3>
+	<p>Znacznik 'br' przenosi treść do kolejnej linii, natomiast znacznik 'p' przenosi treść dwie linie dalej.</p>
+
+</div>
+
+<div>
+		<p>Linki do pozostalych plikow:</p>
+			<ul>
+			<li><a href="http://charon.kis.agh.edu.pl/~gresmich/Cwiczenie1.html">Cwiczenie 1</a></li>
+				<li><a href="http://charon.kis.agh.edu.pl/~gresmich/Cwiczenie3.html">Cwiczenie 3</a></li>
+				<li><a href="http://charon.kis.agh.edu.pl/~gresmich/Cwiczenie4.html">Cwiczenie 4</a></li>
+			</ul>
+		
+	</div>
+</body>
+</html>
+
